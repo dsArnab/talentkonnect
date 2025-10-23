@@ -6,7 +6,9 @@ Welcome to the **TalentKonnect Launch Race** landing page — a sleek, responsiv
 
 ## 🌟 Live Demo
 
-Experience the landing page live here:  
+Experience the landing page live here:  https://starlit-khapse-09bf74.netlify.app/  
+
+
 <img width="1682" height="915" alt="image" src="https://github.com/user-attachments/assets/eaa0c9d8-4a52-4a5b-8cdd-69975030c99f" />
 
 
