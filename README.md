@@ -66,31 +66,29 @@ The goal of this project is to **turn a static marketing concept into a fully sa
 ## 📂 Project Structure
 
 ```text
-TalentKonnect-Dev-Assessments/
+talentkonnect/
 │
+├─ bali.jpg           # First prize bali image
 ├─ index.html         # Main landing page
 ├─ styles.css         # Layout, typography, responsiveness
 ├─ changes.md         # Documentation of changes & next steps
-└─ assets/            # Images, icons, logos
+
 🚀 How to Run
 Clone the repo:
 
 bash
 Copy code
-git clone https://github.com/kanbanfeed/TalentKonnect-Dev-Assessments.git
-cd TalentKonnect-Dev-Assessments
+git clone https://github.com/dsArnab/talentkonnect.git
 Open index.html in any browser.
 
-Optionally, deploy to Vercel, Netlify, or any static hosting platform.
-
 📝 Changes Implemented
-Built a fully responsive landing page for TalentKonnect Launch Race.
-
-Added hero, how-it-works, rewards banner, and demo checkout.
-
-Applied modern, clean design with teal accent.
-
-Ensured mobile-first responsiveness and smooth user interactions.
+- Hero section — Refined hero area with compelling headline, clear sub-headline, and dual CTAs. Introduced an animated visual element to draw focus to the primary action.
+- How It Works — Updated the 3-column responsive grid layout with rounded, centered icons, progressive step indicators, and engaging hover effects for better user interaction.
+- Rewards section — Updated grid design and replaced placeholder visuals with the new Bali image (bali.jpg). Animated the countdown clock and optimized its placement below the scroll area for better mobile accessibility.
+- Testimonials (Founder) section — Refreshed avatar icons, introduced hover effects for interactivity, and changed the clock animation timing for visual consistency.
+- Bonus section — Added a new “Referral Streak” feature showcasing how users can earn credits and rewards through referrals.
+- Visual consistency — Maintained a clean, modern white interface accented with TalentKonnect teal (#00BFA6) for brand continuity.
+- Responsiveness & Accessibility — Ensured full mobile responsiveness, optimized animations for performance, and preserved smooth scrolling and accessibility compliance throughout the page.
 
 🎯 Next Steps for Production
 Integrate a real payment system (Stripe/Razorpay).
@@ -104,13 +102,14 @@ Include social proof, testimonials, and batch countdown timer.
 Optimize SEO meta tags and deploy with branding.
 
 👨‍💻 Author
+
 Kartik Chilkoti – Front-end Developer & Tech Enthusiast
-
 Passionate about interactive, user-friendly web experiences
-
 Organizer of hackathons and workshops
-
 Skilled in React, Node.js, modern UI/UX, and full-stack development
+
+Arnab Das – Full Stack Developer
+Skilled in MERN Stack (MongoDB, Express.js, React.js, Node.js)
 
 📜 License
 This project is for assessment purposes only. Do not use commercially without permission.
