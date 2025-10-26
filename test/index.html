@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Enhanced Header / Nav -->
   <header class="site-header" role="banner">
@@ -29,7 +30,7 @@
         </div>
       </div>
       <nav class="nav" role="navigation" aria-label="Main navigation">
-        <div class="nav-links" role="menubar">
+        <div class="nav-links" role="menubar" id="mobile-menu">
           <a href="#how" class="nav-link" role="menuitem">
             <span class="nav-icon" aria-hidden="true">🎯</span>
             <span>How it works</span>
@@ -82,7 +83,7 @@
         <!-- Hero copy -->
         <div class="hero-copy">
           <h1 class="hero-title">Launch Your Project. Compete. Win Bali.</h1>
-          <p class="hero-sub">Join live Skill Races — pay $499, get your project listed, earn credits, and win prizes.</p>
+          <p class="hero-sub">Join live Skill Races – pay $499, get listed, earn credits, and win prizes.</p>
 
           <div class="hero-ctas">
             <a class="btn btn-primary" href="#checkout">Join the Skill Race</a>
@@ -95,52 +96,142 @@
           </ul>
         </div>
 
-        <!-- Hero visual (placeholder) -->
+        <!-- Enhanced Hero visual -->
         <aside class="hero-visual" aria-hidden="true">
-          <div class="device-card">
-            <div class="device-top">
-              <div class="pill"></div>
-              <div class="pill small"></div>
+          <div class="hero-visual-container">
+            <!-- Floating project cards -->
+            <div class="floating-cards">
+              <div class="project-card-float card-1">
+                <div class="card-header">
+                  <div class="card-avatar">🚀</div>
+                  <div class="card-info">
+                    <div class="card-title">TechFlow</div>
+                    <div class="card-status">Live</div>
+                  </div>
+                </div>
+                <div class="card-metrics">
+                  <span class="metric">+245%</span>
+                  <span class="metric-label">Growth</span>
+                </div>
+              </div>
+              
+              <div class="project-card-float card-2">
+                <div class="card-header">
+                  <div class="card-avatar">💡</div>
+                  <div class="card-info">
+                    <div class="card-title">InnovateAI</div>
+                    <div class="card-status">Trending</div>
+                  </div>
+                </div>
+                <div class="card-metrics">
+                  <span class="metric">18x</span>
+                  <span class="metric-label">ROI</span>
+                </div>
+              </div>
+              
+              <div class="project-card-float card-3">
+                <div class="card-header">
+                  <div class="card-avatar">⚡</div>
+                  <div class="card-info">
+                    <div class="card-title">SwiftLaunch</div>
+                    <div class="card-status">Winner</div>
+                  </div>
+                </div>
+                <div class="card-metrics">
+                  <span class="metric">$3k</span>
+                  <span class="metric-label">Prize</span>
+                </div>
+              </div>
             </div>
-            <div class="device-screen">
-              <div class="mini-stats">
-                <div>
-                  <div class="stat">499</div>
-                  <div class="label">Credits</div>
+
+            <!-- Central dashboard -->
+            <div class="device-card">
+              <div class="device-top">
+                <div class="pill"></div>
+                <div class="pill small"></div>
+              </div>
+              <div class="device-screen">
+                <div class="dashboard-header">
+                  <h4>Skill Race Dashboard</h4>
+                  <div class="live-indicator">
+                    <span class="pulse-dot"></span>
+                    Live
+                  </div>
                 </div>
-                <div>
-                  <div class="stat">20</div>
-                  <div class="label">Founders</div>
+                
+                <div class="mini-stats">
+                  <div class="stat-item">
+                    <div class="stat-number" data-target="499">0</div>
+                    <div class="stat-label">Credits</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Founders</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number" data-target="7">0</div>
+                    <div class="stat-label">Days Left</div>
+                  </div>
                 </div>
-                <div>
-                  <div class="stat">7d</div>
-                  <div class="label">Batch</div>
+                
+                <div class="project-card">
+                  <div class="project-title">Your Startup — Live Listing</div>
+                  <div class="project-meta">Ranked by skill • real reviews</div>
+                  <div class="project-progress">
+                    <div class="progress-bar">
+                      <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-text">Ranking: #12 of 20</span>
+                  </div>
+                </div>
+                
+                <div class="leaderboard-preview">
+                  <div class="leaderboard-title">Top Performers</div>
+                  <div class="leaderboard-item">
+                    <span class="rank">1</span>
+                    <span class="name">TechFlow</span>
+                    <span class="score">94.2</span>
+                  </div>
+                  <div class="leaderboard-item">
+                    <span class="rank">2</span>
+                    <span class="name">InnovateAI</span>
+                    <span class="score">91.8</span>
+                  </div>
+                  <div class="leaderboard-item">
+                    <span class="rank">3</span>
+                    <span class="name">SwiftLaunch</span>
+                    <span class="score">89.5</span>
+                  </div>
                 </div>
               </div>
-              <div class="project-card">
-                <div class="project-title">Your Startup — Live Listing</div>
-                <div class="project-meta">Ranked by skill • real reviews</div>
-              </div>
+            </div>
+
+            <!-- Animated elements -->
+            <div class="hero-animations">
+              <div class="floating-icon icon-1">💎</div>
+              <div class="floating-icon icon-2">🏆</div>
+              <div class="floating-icon icon-3">⚡</div>
+              <div class="floating-icon icon-4">🚀</div>
             </div>
           </div>
         </aside>
       </div>
 
-      <!-- subtle CTA bar for mobile -->
+      <!-- Mobile CTA bar - integrated into page flow -->
       <div class="mobile-cta" id="mobile-cta">
         <div class="mobile-cta-inner">
           <div>
             <div class="price">$499</div>
             <div class="small">Join Skill Race</div>
           </div>
-          <a href="#checkout" class="btn btn-primary small">Join</a>
+          <a href="#checkout" class="btn btn-primary small">Join Now</a>
         </div>
       </div>
     </section>
 
     <!-- How it works -->
     <section class="how" id="how">
-      <div class="container">
+      <div class="container howSection">
         <h2 class="section-title">How the Skill Race Works</h2>
         <p class="section-lead">Three steps. Pure skill. No luck.</p>
         <div class="how-grid">
@@ -152,9 +243,9 @@
             <h3>Launch</h3>
             <p>Pay $499 to list your project and receive <strong>499 credits</strong> to use in TalentKonnect.</p>
             <ul class="feature-list">
-              <li>✓ Premium project listing</li>
-              <li>✓ 499 usable credits</li>
-              <li>✓ Founder dashboard access</li>
+              <li> Premium project listing</li>
+              <li> 499 usable credits</li>
+              <li> Founder dashboard access</li>
             </ul>
             <div class="progress-indicator">
               <div class="step active">1</div>
@@ -173,9 +264,9 @@
             <h3>Compete</h3>
             <p>7-day batch with <strong>20 founders</strong>. Participants are ranked by skill — no raffles.</p>
             <ul class="feature-list">
-              <li>✓ Daily skill challenges</li>
-              <li>✓ Expert mentorship</li>
-              <li>✓ Real-time rankings</li>
+              <li> Daily skill challenges</li>
+              <li> Expert mentorship</li>
+              <li> Real-time rankings</li>
             </ul>
             <div class="progress-indicator">
               <div class="step completed">1</div>
@@ -194,9 +285,9 @@
             <h3>Win</h3>
             <p>1st: Bali trip (~$3,000). 2nd–5th: $499 prizes. Others receive <strong>245 credits</strong> refunded.</p>
             <ul class="feature-list">
-              <li>✓ Guaranteed rewards</li>
-              <li>✓ Skill-based ranking</li>
-              <li>✓ Network benefits</li>
+              <li> Guaranteed rewards</li>
+              <li> Skill-based ranking</li>
+              <li> Network benefits</li>
             </ul>
             <div class="progress-indicator">
               <div class="step completed">1</div>
@@ -230,8 +321,8 @@
       </div>
       <div class="container rewards-inner">
         <div class="rewards-left reveal-on-scroll">
-          <h2>🎯 No raffles. Just skill. Every participant earns credits.</h2>
-          <p class="muted">Next batch: only <strong>20 slots</strong> open. Secure your spot and get your project in front of active founders and reviewers.</p>
+          <h2>🎯 No raffles. No luck. Every participant earns credits.</h2>
+          <p class="muted">Next batch opens soon → Join Now → <a href="#checkout" class="btn btn-primary checkBtn">Checkout Button</a></p>
           
           <div class="value-props">
             <div class="value-item">
@@ -274,7 +365,7 @@
             </div>
             <div class="reward-rank">1st</div>
             <div class="reward-visual">
-              <img src="https://via.placeholder.com/120x80" alt="Bali prize visualization" class="reward-image">
+              <img src="../assets/bali.jpg" alt="Bali prize visualization" class="reward-image">
               <div class="reward-glow"></div>
             </div>
             <div class="reward-title">Bali Trip</div>
@@ -316,11 +407,13 @@
             </ul>
           </div>
 
-          <div class="time-sensitive reveal-on-scroll" data-delay="400">
-            <div class="ts-content">
-              <div class="ts-icon animate-pulse">⏰</div>
-              <p>Next batch closes in <strong id="batch-countdown">7d 00:00:00</strong></p>
-            </div>
+        </div>
+        
+        <!-- Timer moved outside scrolling area for mobile -->
+        <div class="time-sensitive" data-delay="400">
+          <div class="ts-content">
+            <div class="ts-icon animate-pulse">⏰</div>
+            <p>Next batch closes in <strong id="batch-countdown">7d 00:00:00</strong></p>
           </div>
         </div>
       </div>
@@ -446,6 +539,24 @@
       </div>
     </section>
 
+    <!-- Gamification Bonus Feature -->
+    <section class="bonus-feature">
+      <div class="container">
+        <div class="bonus-card">
+          <h2>🔥 Bonus: Referral Streak</h2>
+          <p>Invite 3+ founders to join and unlock <strong>50 bonus credits</strong> per referral. Build your founder network while earning extra credits for your next Skill Race participation. Referral streaks reset monthly, creating ongoing engagement and community growth.</p>
+          <div class="bonus-visual">
+            <div class="streak-counter">Current Streak: 0</div>
+            <div class="streak-rewards">
+              <span>3 referrals = 150 credits</span>
+              <span>5 referrals = 250 credits</span>
+              <span>10 referrals = 500 credits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Checkout placeholder -->
     <section class="checkout" id="checkout">
       <div class="container">
@@ -453,7 +564,7 @@
           <h2>Secure your spot — $499</h2>
           <p>You're one step away from getting your project listed in the next TalentKonnect Skill Race. No backend required for this demo — the button below is a placeholder linking to a mock checkout.</p>
           <div class="checkout-actions">
-            <a href="#" class="btn btn-primary large">Placeholder Checkout</a>
+            <a href="#hero" class="btn btn-primary large">Placeholder Checkout</a>
             <a href="#hero" class="btn btn-ghost">Back to top</a>
           </div>
         </div>
@@ -572,17 +683,27 @@
       const target = new Date();
       target.setDate(target.getDate() + 7);
       const el = document.getElementById('countdown-timer');
+      const batchEl = document.getElementById('batch-countdown');
 
       function pad(n){ return n<10 ? '0'+n : n }
 
       function animateNumber(element, value) {
-        element.style.transform = 'translateY(-20px)';
-        element.style.opacity = '0';
+        // Scale and rotate animation
+        element.style.transform = 'scale(0.8) rotate(5deg)';
+        element.style.opacity = '0.6';
+        element.style.filter = 'blur(2px)';
+        
         setTimeout(() => {
           element.textContent = value;
-          element.style.transform = 'translateY(0)';
+          element.style.transform = 'scale(1.1) rotate(-2deg)';
           element.style.opacity = '1';
-        }, 300);
+          element.style.filter = 'blur(0px)';
+          
+          // Final settle animation
+          setTimeout(() => {
+            element.style.transform = 'scale(1) rotate(0deg)';
+          }, 150);
+        }, 200);
       }
 
       function update(){
@@ -599,6 +720,9 @@
         const newText = `${days}d ${pad(hours)}:${pad(mins)}:${pad(secs)}`;
         if (el && el.textContent !== newText) {
           animateNumber(el, newText);
+        }
+        if (batchEl && batchEl.textContent !== newText) {
+          animateNumber(batchEl, newText);
         }
       }
 
@@ -696,7 +820,8 @@
         if (!mCta) return;
 
         try {
-          const shouldShow = window.innerWidth <= 720 && window.scrollY > 300;
+          // Show mobile CTA on mobile devices without fixed positioning
+          const shouldShow = window.innerWidth <= 720;
           mCta.classList.toggle('visible', shouldShow);
 
           // Update aria-hidden based on visibility
@@ -827,6 +952,176 @@
         }, 0);
       });
     }
+
+    // Animated counter for hero stats
+    function animateCounter(element, target, duration = 2000) {
+      const start = 0;
+      const increment = target / (duration / 16);
+      let current = start;
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        element.textContent = Math.floor(current);
+      }, 16);
+    }
+
+    // Initialize animated counters when hero section is visible
+    const heroStats = document.querySelectorAll('.stat-number[data-target]');
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = parseInt(entry.target.dataset.target);
+          animateCounter(entry.target, target);
+          heroObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    heroStats.forEach(stat => {
+      heroObserver.observe(stat);
+    });
+
+    // Enhanced scroll animations for Skill Race section
+    const skillRaceObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('revealed');
+            
+            // Trigger progress animations for each card
+            if (entry.target.classList.contains('how-card')) {
+              const progressLines = entry.target.querySelectorAll('.step-line.active');
+              progressLines.forEach((line, lineIndex) => {
+                setTimeout(() => {
+                  line.classList.add('animate');
+                }, lineIndex * 300);
+              });
+            }
+          }, index * 200);
+          
+          skillRaceObserver.unobserve(entry.target);
+        }
+      });
+    }, { 
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe all Skill Race elements
+    document.querySelectorAll('.how-card, .action-banner').forEach(el => {
+      skillRaceObserver.observe(el);
+    });
+
+    // Add staggered animation for feature list items
+    const featureListObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const listItems = entry.target.querySelectorAll('li');
+          listItems.forEach((item, index) => {
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'translateX(0)';
+            }, index * 100);
+          });
+          featureListObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.feature-list').forEach(list => {
+      // Set initial state for list items
+      list.querySelectorAll('li').forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateX(-20px)';
+        item.style.transition = 'all 0.3s ease';
+      });
+      featureListObserver.observe(list);
+    });
+
+    // Enhanced scroll animations for Testimonials section
+    const testimonialsObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('revealed');
+          }, index * 200);
+          testimonialsObserver.unobserve(entry.target);
+        }
+      });
+    }, { 
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe all testimonials elements
+    document.querySelectorAll('.testimonial-card, .metric-card, .countdown-card').forEach(el => {
+      testimonialsObserver.observe(el);
+    });
+    
+    // Observe timer element for animations
+    document.querySelectorAll('.time-sensitive').forEach(el => {
+      testimonialsObserver.observe(el);
+    });
+
+    // Add staggered animation for success metrics inline
+    const metricsInlineObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const metrics = entry.target.querySelectorAll('.metric');
+          metrics.forEach((metric, index) => {
+            setTimeout(() => {
+              metric.style.opacity = '1';
+              metric.style.transform = 'translateY(0)';
+            }, index * 150);
+          });
+          metricsInlineObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.success-metrics-inline').forEach(container => {
+      // Set initial state for metrics
+      container.querySelectorAll('.metric').forEach(metric => {
+        metric.style.opacity = '0';
+        metric.style.transform = 'translateY(20px)';
+        metric.style.transition = 'all 0.4s ease';
+      });
+      metricsInlineObserver.observe(container);
+    });
+
+    // Enhanced scroll animations for Bonus section
+    const bonusObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('revealed');
+            
+            // Trigger staggered animations for reward spans
+            if (entry.target.classList.contains('bonus-card')) {
+              const rewardSpans = entry.target.querySelectorAll('.streak-rewards span');
+              rewardSpans.forEach((span, spanIndex) => {
+                setTimeout(() => {
+                  span.classList.add('revealed');
+                }, spanIndex * 200);
+              });
+            }
+          }, index * 300);
+          bonusObserver.unobserve(entry.target);
+        }
+      });
+    }, { 
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe bonus section elements
+    document.querySelectorAll('.bonus-card').forEach(el => {
+      bonusObserver.observe(el);
+    });
   </script>
 
   <!-- Fallback for no-js -->
